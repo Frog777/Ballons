@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/resets.css">
+    <link rel="stylesheet" href="/src/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/icons-font.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <title>Ballons</title>
+</head>
+<body>
+    <div class="container">
+
+
+        <div class="navigation">
+            <input type="checkbox" class="navigation__toggle" id="navin__toggle">
+            <label for="navin__toggle" class="navigation__button">
+                <span class="navigation__icon"></span>
+            </label>
+            <div class="navigation__background"></div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link">о нас</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">скидки</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">лучшие туры</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">калькулятор цены</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">связаться с нами</a></li>
+                </ul>
+            </nav>
+        </div>
+<header class="header">
+    <img class="header__logo" src="/src/icons/Icon-logo.svg" alt="логотип воздушный шар">
+    <div class="header__box">
+        <h1 class="title-first">
+            <span class="title-first__main" >ТУРЫ НА ВОЗДУШНОМ ШАРЕ</span>
+            <span class="title-first__secondary" >незабываемое приключение ждет вас</span>
+        </h1>
+
+    <!-- КНОПКА С АНИМАЦИЕЙ В SASS -->
+
+        <a href="#" class="btn btn_animated">наш каталог</a> 
+    </div>
+</header>
+
+<main>
+    <section class="section-about">
+        <div class="text-align-center margin-bottom-80px">
+        <h2 class="title-secondary">
+            невероятное ощущение свободы
+        </h2>
+        </div>
+<!-- вторая секция на базе grid сетки -->
+
+        <div class="row">
+            <div class="col-1-of-2">
+                <h3 class="title-third margin-bottom-10px">позвольте себе приключение</h3>
+                <p class="paragraph margin-bottom-30px">Учитывая ключевые сценарии поведения, высокое качество позиционных исследований требует от нас анализа анализа существующих паттернов поведения. Ясность нашей позиции очевидна: постояннормационно-пропагандистское обеспечение нашей деятельности обеспечивает актуальность новых предложений. .</p>
+
+                <h3 class="title-third margin-bottom-10px">вверх на 6000 метров над уровнем моря</h3>
+                <p class="paragraph margin-bottom-30px">Учитывая ключевые сценарии поведения, высокое качество позиционных исследований требует от нас анализа анализа существующих паттернов поведения. Ясность нашей позиции очевидна: постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает актуальность новых предложений</p>
+
+
+                <!-- кнопка текстовая -->
+
+                <a class="btn-text margin-bottom-50px" href="#">Узнать больше &rarr;</a>
+            </div>
+
+            <!-- КАРТИНКИ С АНИМАЦИЯМИ -->
+
+            <div class="col-1-of-2">
+                <div class="composition">
+
+                    <img src="/src/img/img1.png" 
+                    srcset="/src/img/img1.png 950w,
+                     /src/img/img1(m).png 320w"
+                    sizes="( max-width: 1240px ) 23vw,
+                     ( max-width: 900px ) 43vw,
+                     ( max-width: 600px ) 47vw, 300px"
+                    alt="картинка с шаром" class="composition__photo composition__photo_n1">
+
+
+                    <img src="/src/img/img2.png" 
+                    srcset="/src/img/img2.png 950w,
+                     /src/img/img2(m).png 320w"
+                    sizes="( max-width: 1240px ) 23vw,
+                     ( max-width: 900px ) 43vw,
+                     ( max-width: 600px ) 47vw, 300px"
+                    alt="картинка много шаров" class="composition__photo composition__photo_n2">
+
+
+
+                    <img src="/src/img/img3.png"
+                    srcset="/src/img/img3.png 950w,
+                     /src/img/img3(m).png 320w"
+                    sizes="( max-width: 1240px ) 23vw,
+                     ( max-width: 900px ) 43vw,
+                     ( max-width: 600px ) 47vw, 300px"
+                    alt="картинка воздушный шар" class="composition__photo composition__photo_n3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ТРЕТЬЯ СЕКЦИЯ САЙТА -->
+
+    <section class="section-adventure">
+        <div class="row">
+            <div class="col-1-of-4">
+                <div class="adventure-card">
+
+                    <i class="adventure-card__icon icon-Vector-3 margin-bottom-20px"></i>
+                    <h3 class="title-third margin-bottom-10px">приключение</h3>
+                    <p class="paragraph">Задача организации, в особенности же дальнейшее развитие различных в особенности же развитие различных</p>
+                </div>
+            </div>
+            <div class="col-1-of-4">
+                <div class="adventure-card">
+
+                    <i class="adventure-card__icon icon-Vector-2"></i>
+                    <h3 class="title-third margin-bottom-10px">приключение</h3>
+                    <p class="paragraph">Задача организации, в особенности же дальнейшее развитие различных в особенности же развитие различных</p>
+                </div>
+            </div>
+            <div class="col-1-of-4">
+                <div class="adventure-card">
+
+                    <i class="adventure-card__icon icon-Vector"></i>
+                    <h3 class="title-third margin-bottom-10px">приключение</h3>
+                    <p class="paragraph">Задача организации, в особенности же дальнейшее развитие различных в особенности же развитие различных</p>
+                </div>
+            </div>
+            <div class="col-1-of-4">
+                <div class="adventure-card">
+
+                    <i class="adventure-card__icon icon-Vector-1"></i>
+                    <h3 class="title-third margin-bottom-10px">приключение</h3>
+                    <p class="paragraph">Задача организации, в особенности же дальнейшее развитие различных в особенности же развитие различных</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- СЕКЦИЯ С ТУРАМИ И КАРТОЧКАМИ (ПЕРЕВОРАЧИВАЮТСЯ) -->
+
+    <section class="section-tour">
+
+        <div class="text-align-center margin-bottom-80px">
+            <h2 class="title-secondary">наиболее популярные туры</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-3">
+                <div class="card-tour">
+                    <!-- ЛИЦЕВАЯ СТОРОНА КАРТОЧКИ -->
+                    <div class="card-tour__side card-tour__side_front">
+                        <div class="card-tour__img card-tour__img_1 margin-bottom-50px"></div>
+
+                    <h4 class="card-tour__title">
+                        <span class="card-tour__span card-tour__span_1">групповые</span>
+                        <br>
+                        <span class="card-tour__span card-tour__span_2"> туры</span>
+                    </h4>
+                    <div class="card-tour__descr">
+                        <ul>
+                            <li>Группы от 6 человек</li>
+                            <li>Продолжительность 2 час</li>
+                            <li>В группе 1 гид</li>
+                            <li>Дальность полета 6км</li>
+                            <li>Бесплатные сувениры</li>
+                        </ul>
+                    </div>
+                    </div>
+                    <!-- ЗАДНЯЯ СТОРОНА КАРТОЧКТИ -->
+                    <div class="card-tour__side card-tour__side_back">
+                        <div class="card-tour__backSide-box">
+                        <p class="card-tour__text card-tour__text_1">полная стоимость:</p>
+                        <p class="card-tour__text card-tour__text_2">5990₽</p>
+                        <a href="#" class="btn btn_animated">заказать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-3">
+                <div class="card-tour">
+     <!-- ЛИЦЕВАЯ СТОРОНА КАРТОЧКИ -->
+                    <div class="card-tour__side card-tour__side_front">
+                        <div class="card-tour__img card-tour__img_2 margin-bottom-50px"></div>
+
+                    <h4 class="card-tour__title">
+                        <span class="card-tour__span card-tour__span_1">частные</span>
+                        <br>
+                        <span class="card-tour__span card-tour__span_2"> туры</span>
+                    </h4>
+                    <div class="card-tour__descr">
+                        <ul>
+                            <li>Группы от 6 человек</li>
+                            <li>Продолжительность 2 час</li>
+                            <li>В группе 1 гид</li>
+                            <li>Дальность полета 6км</li>
+                            <li>Бесплатные сувениры</li>
+                        </ul>
+                    </div>
+                    </div>
+ <!-- ЗАДНЯЯ СТОРОНА КАРТОЧКТИ -->
+                    <div class="card-tour__side card-tour__side_back">
+                        <div class="card-tour__backSide-box">
+                        <p class="card-tour__text card-tour__text_1">полная стоимость:</p>
+                        <p class="card-tour__text card-tour__text_2">5990₽</p>
+                        <a href="#" class="btn btn_animated">заказать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-3">
+                <div class="card-tour">
+ <!-- ЛИЦЕВАЯ СТОРОНА КАРТОЧКИ -->
+                    <div class="card-tour__side card-tour__side_front">
+                        <div class="card-tour__img card-tour__img_3 margin-bottom-50px"></div>
+
+                    <h4 class="card-tour__title">
+                        <span class="card-tour__span card-tour__span_1">смотровые</span>
+                        <br>
+                        <span class="card-tour__span card-tour__span_2">площадки</span>
+                    </h4>
+                    <div class="card-tour__descr">
+                        <ul>
+                            <li>Группы от 6 человек</li>
+                            <li>Продолжительность 2 час</li>
+                            <li>В группе 1 гид</li>
+                            <li>Дальность полета 6км</li>
+                            <li>Бесплатные сувениры</li>
+                        </ul>
+                    </div>
+                    </div>
+ <!-- ЗАДНЯЯ СТОРОНА КАРТОЧКТИ -->
+                    <div class="card-tour__side card-tour__side_back">
+                        <div class="card-tour__backSide-box">
+                        <p class="card-tour__text card-tour__text_1">полная стоимость:</p>
+                        <p class="card-tour__text card-tour__text_2">5990₽</p>
+                        <a href="#" class="btn btn_animated">заказать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                                     <!-- КНОПКА ПОСЛЕ КАРТОЧЕК -->
+    <div class="text-align-center">
+        <a href="#" class="btn btn_animated">забронировать</a>
+    </div>
+    </section>
+
+                             <!-- СЕКЦИЯ ОБРАТНОЙ СВЯЗИ С КАРТАЧКАМИ И КНОПКОЙ -->
+
+    <section class="section-feedback">
+        <div class="bg-gradient"></div>
+        <video class="bg-video" autoplay muted loop>
+            <source src="/src/img/video-mp4.mp4">
+            <source src="/src/img/video-webm.webm">
+        </video>
+        <div class="text-align-center margin-bottom-80px">
+            <h2 class="title-secondary title-secondary_white">отзывы наших клиентов</h2>
+        </div>
+        <div class="row margin-bottom-80px">
+            <div class="feedback-card">
+                <figure class="feedback-card__img">
+
+                    <img src="/src/img/man.jpg" alt="photo-man">
+
+                    <figcaption class="feedback-card__name">АНТОН РЯБИН</figcaption>
+
+                </figure>
+                <div class="feedback-card_box">
+                <h3 class="title-third margin-bottom-10px">Я ПОЛУЧИЛ МАССУ ВПЕЧАТЛЕНИЙ</h3>
+                <p class="paragraph">Задача организации, в особенности же дальнейшее 
+                    развитие различных форм деятельности влечет за
+                    собой процесс внедрения и модернизации 
+                    соответствующий условий активизации. Таким 
+                    образом начало повседневной работы по 
+                    формированию позиции влечет.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="feedback-card">
+                <figure class="feedback-card__img">
+
+                    <img src="/src/img/woman.jpg" alt="photo-man">
+
+                    <figcaption class="feedback-card__name">ЛИЗА ФРОЛОВА</figcaption>
+                    
+                </figure>
+                <div class="feedback-card_box">
+                <h3 class="title-third margin-bottom-10px">Я ПОЛУЧИЛ МАССУ ВПЕЧАТЛЕНИЙ</h3>
+                <p class="paragraph">Задача организации, в особенности же дальнейшее 
+                    развитие различных форм деятельности влечет за
+                    собой процесс внедрения и модернизации 
+                    соответствующий условий активизации. Таким 
+                    образом начало повседневной работы по 
+                    формированию позиции влечет.</p>
+                </div>
+            </div>
+        </div>
+                                        <!-- КНОПКА -->
+        <div class="text-align-center">
+            <a href="#" class="btn btn_animated">забронировать</a>
+        </div>
+    </section>
+        <!-- СЕКЦИЯ ФОРМЫ НА САЙТЕ ОТДЕЛЬНЫМ БЭМ БЛОКОМ -->
+
+
+    <section class="section-book">  <!-- сделал фон и падинги -->
+
+        <div class="row">   <!-- одна строка просто grid -->
+
+            <div class="book">     <!-- карточка с фоном и градиентом -->
+
+                <div class="book__form">   <!-- обертка для формы -->
+
+                    <form action="#" class="form">      <!-- сама форма -->
+                        <div class="text-align-center margin-bottom-30px">
+                            <h2 class="title-secondary">ЗАБРОНИРОВАТЬ ТУР</h2>
+                            </div>
+         <!-- далее прописаны input для ввода,placeholder для подсказки в нем, лейбл тоже наводящая подсказка -->
+                        <div class="form__group">
+                        <input type="text" class="form__input" id="name" placeholder="Имя Фамилия" required>
+                        <label for="name" class="form__label">Ваше Имя и Фамилия</label>
+                        </div>
+        <!-- второй input уже с другим типом  -->
+                        <div class="form__group">
+                        <input type="email" class="form__input" id="email" placeholder="Ivanov@mail.ru" required>
+                        <label for="email" class="form__label">Почтовый Адрес</label>
+                        </div>
+
+            <!-- радио инпут группы  создали также чтобы отделить вообще части-->
+                        <div class="form__group">
+                            <div class="form__group-radio">
+                                <input type="radio" class="form__input-radio" id="tour-1" name="cheked">
+                                <label for="tour-1" class="form__label-radio">
+                                    <span class="form__button-radio"></span>
+                                    Групповой тур</label>
+                            </div>
+                    <!-- вторая радио инпут -->
+                            <div class="form__group-radio">
+                                <input type="radio" class="form__input-radio" id="tour-2" name="cheked">
+                                <label for="tour-2" class="form__label-radio">
+                                    <span class="form__button-radio"></span>
+                                    Индивидуальный тур</label>
+                            </div>
+                            
+                        </div>
+                    <!-- кнопка отправки формы важно размещать в форме так как она ее отправляет!!! -->
+                        <div class="form__group">
+                            <div class="btn btn_brown">ЗАБРОНИРОВАТЬ</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="row text-align-center" >
+    <img class="footer__logo" src="/src/icons/Icon-logo.svg" alt="логотип воздушный шар">
+    </div> 
+    <div class="row">
+        <ul class="footer__list">
+            <li class="item"><a href="#">о нас</a></li>
+            <li class="item"><a href="#">скидки</a></li>
+            <li class="item"><a href="#">лучшие туры</a></li>
+            <li class="item"><a href="#">калькулятор цены</a></li>
+            <li class="item"><a href="#">связаться с нами</a></li>
+        </ul>
+    </div>
+
+    <div class="card-new">
+
+
+
+        <div class="card-new__side card-new__side_front">
+            
+        </div>
+
+        <div class="card-new__side card-new__side_back">
+            
+        </div>
+
+
+
+    </div>
+
+</footer>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <section class="grid-test">
+
+        <div class="row">
+            <div class="col-1-of-2">
+                col-1-of-2
+            </div>
+            <div class="col-1-of-2">
+                col-1-of-2
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-3">
+                col-1-of-3
+            </div>
+            <div class="col-1-of-3">
+                col-1-of-3
+            </div>
+            <div class="col-1-of-3">
+                col-1-of-3
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-3">
+                col-1-of-3
+            </div>
+            <div class="col-2-of-3">
+                col-2-of-3
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-4">
+                col-1-of-4
+            </div>
+            <div class="col-1-of-4">
+                col-1-of-4
+            </div>
+            <div class="col-1-of-4">
+                col-1-of-4
+            </div>
+            <div class="col-1-of-4">
+                col-1-of-4
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-4">
+                col-1-of-4
+            </div>
+            <div class="col-1-of-4">
+                col-1-of-4
+            </div>
+            <div class="col-2-of-4">
+                col-2-of-4
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-4">
+                col-1-of-4
+            </div>
+            <div class="col-3-of-4">
+                col-3-of-4
+            </div>
+        </div>
+
+
+    </section> -->
+</body>
+</html>

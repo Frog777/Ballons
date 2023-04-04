@@ -1,0 +1,33 @@
+
+//блок с картинками и их анимации
+
+.composition
+    position: relative
+    @include respond(tab-port)
+        margin-bottom: 23rem
+    //далее идет псевдокласс который обращается к элементам(кроме наведенных)
+    //и уменьшает их относительно наведенного
+    &:hover &__photo:not(:hover)
+        transform: scale(.95)
+    &__photo
+        position: absolute
+        width: 60%
+        border-radius: .7rem
+        box-shadow: $box-shadow
+        z-index: 10
+        transition: all .5s
+        outline-offset: 1rem
+
+        &:hover     
+            transform: scale(1.2)
+            z-index: 20
+            outline: 1.5rem $color-brown-light solid
+        &_n1
+            top: 0
+            left: 0rem
+        &_n2
+            top: 3rem
+            right: 0rem
+        &_n3
+            top: 13rem
+            left: 10rem

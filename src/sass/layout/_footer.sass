@@ -1,0 +1,29 @@
+.footer
+    background: rgba(45, 44, 44, 1)
+    padding: 8rem
+    &__logo
+        width: 12rem
+    &__list
+        list-style: none
+        text-align: center
+.item
+    @include respond(tab-port)
+        margin-right: 4rem
+        margin-bottom: 4rem
+    transition: all .5s
+    &:hover
+        transform: skewY(2deg) skewX(15deg) rotate(-10deg)
+    display: inline-block
+    &:not(:last-child)
+        margin-right: 5rem
+        @include respond(tab-land)
+            margin-right: 3rem
+    a
+        text-transform: uppercase
+        text-decoration: none
+        font-size: 1.6rem
+        font-weight: 300
+        letter-spacing: .2rem
+        color: rgba(255, 255, 255, 1)
+        &:hover
+            color: $color-brown-light

@@ -1,0 +1,21 @@
+.adventure-card
+    padding: 2.5rem
+    border-radius: .5rem
+    box-shadow: $box-shadow
+    text-align: center
+    background: $color-white
+    opacity: 80%
+    transition: all .5s
+    @include respond(tab-land)
+        padding: 0.6rem
+    @include respond(tab-port)
+        margin-bottom: 4rem
+    &:hover
+        transform: translateY(-.4rem) scale(1.03)
+    &__icon
+        display: inline-block
+        font-size: 6rem
+        background: linear-gradient(90deg, $color-brown-light, $color-brown-dark 99.94%)
+        -webkit-background-clip: text
+        color: transparent
+        margin-bottom: 2rem

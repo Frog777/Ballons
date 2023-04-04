@@ -1,0 +1,76 @@
+//так же тело сайта только здесь расположены свойства относящиеся к тексту
+body
+    font-family: 'Roboto', sans-serif
+    font-weight: 400
+    color: $color-gray
+    font-size: $font-size-paregraph
+    letter-spacing: .2rem
+
+//заголовок сайта и его ращделенные span теги
+.title-first
+    color: $color-white
+    &__main
+        display: block
+        font-weight: 800
+        font-size: 5rem
+        line-height: 6rem
+        letter-spacing: 1rem
+        text-transform: uppercase
+        animation-name: leftTo
+        animation-duration: 3s
+        animation-delay: 1s
+        @include respond(tab-land)
+            font-size: 4rem
+        @include respond(tab-port)
+            font-size: 2rem
+    &__secondary
+        display: block
+        font-weight: 200
+        font-size: 4rem
+        letter-spacing: .5rem
+        line-height: 4,8rem
+        animation-name: rightTo
+        animation-duration: 3s
+        animation-delay: 1s
+        margin-bottom: 6.5rem
+        @include respond(tab-land)
+            font-size: 3rem
+        @include respond(tab-port)
+            font-size: 2rem
+
+.title-secondary
+    display: inline-block
+    font-size: $font-size-paregraph-h2
+    letter-spacing: 1rem
+    text-transform: uppercase
+    text-align: center
+    font-weight: 800
+    background: linear-gradient(90deg, $color-brown-light, $color-brown-dark 99.94%)
+    -webkit-background-clip: text
+    color: transparent
+    transition: all 1s
+    backface-visibility: hidden
+    &:hover
+        transform: skewY(2deg) skewX(15deg) scale(1.1)
+        text-shadow: $text-shadow
+    &_white
+        color: $color-white
+    @include respond(tab-port)
+        font-size: 2rem
+
+        
+.title-third
+    font-size: $font-size-paregraph-h3
+    letter-spacing: .2rem
+    text-transform: uppercase
+    font-weight: 700
+    @include respond(tab-land)
+        font-size: 1.3rem
+
+.paragraph
+    font-size: $font-size-paregraph
+    letter-spacing: .2rem
+    line-height: 140%
+    font-weight: 400
+    @include respond(tab-land)
+        font-size: 1.3rem
